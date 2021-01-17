@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{171B4F81-9D60-4B03-96C0-07E220CECBC4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BaycanRentACar</RootNamespace>
+    <AssemblyName>BaycanRentACar</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnaForm.Designer.cs">
+      <DependentUpon>AnaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AracBakim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AracBakim.Designer.cs">
+      <DependentUpon>AracBakim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AracGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AracGuncelle.Designer.cs">
+      <DependentUpon>AracGuncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AracKirala.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AracKirala.Designer.cs">
+      <DependentUpon>AracKirala.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Araclar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Araclar.Designer.cs">
+      <DependentUpon>Araclar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BakimGecmisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BakimGecmisi.Designer.cs">
+      <DependentUpon>BakimGecmisi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ceza.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ceza.Designer.cs">
+      <DependentUpon>Ceza.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kasko.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kasko.Designer.cs">
+      <DependentUpon>Kasko.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sigorta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sigorta.Designer.cs">
+      <DependentUpon>Sigorta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vize.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vize.Designer.cs">
+      <DependentUpon>Vize.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YeniAracForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YeniAracForm.Designer.cs">
+      <DependentUpon>YeniAracForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AnaForm.resx">
+      <DependentUpon>AnaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AracBakim.resx">
+      <DependentUpon>AracBakim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AracGuncelle.resx">
+      <DependentUpon>AracGuncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AracKirala.resx">
+      <DependentUpon>AracKirala.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Araclar.resx">
+      <DependentUpon>Araclar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BakimGecmisi.resx">
+      <DependentUpon>BakimGecmisi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ceza.resx">
+      <DependentUpon>Ceza.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kasko.resx">
+      <DependentUpon>Kasko.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Sigorta.resx">
+      <DependentUpon>Sigorta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vize.resx">
+      <DependentUpon>Vize.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YeniAracForm.resx">
+      <DependentUpon>YeniAracForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessLogicLayer\BusinessLogicLayer.csproj">
+      <Project>{2952ddd4-b9d9-42e1-813a-39851cb5f4c6}</Project>
+      <Name>BusinessLogicLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EntityLayer\EntityLayer.csproj">
+      <Project>{e5928c19-6717-4ef8-8f5c-a3df2124a6d7}</Project>
+      <Name>EntityLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FacadeLayer\FacadeLayer.csproj">
+      <Project>{a0d6a886-9cb9-4ed6-809e-d816b8fda4a0}</Project>
+      <Name>FacadeLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_car_badge_80px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_down_button_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Collapse Arrow_20px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Expand Arrow_20px.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
