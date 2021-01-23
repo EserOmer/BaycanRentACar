@@ -82,6 +82,12 @@
     <Compile Include="BakimGecmisi.Designer.cs">
       <DependentUpon>BakimGecmisi.cs</DependentUpon>
     </Compile>
+    <Compile Include="BakimGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BakimGuncelle.Designer.cs">
+      <DependentUpon>BakimGuncelle.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ceza.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -131,6 +137,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="BakimGecmisi.resx">
       <DependentUpon>BakimGecmisi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BakimGuncelle.resx">
+      <DependentUpon>BakimGuncelle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ceza.resx">
       <DependentUpon>Ceza.cs</DependentUpon>

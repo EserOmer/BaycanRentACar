@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.dataGridView5 = new System.Windows.Forms.DataGridView();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -65,15 +66,16 @@
             this.KBT = new System.Windows.Forms.Label();
             this.KBIT = new System.Windows.Forms.Label();
             this.SBIT = new System.Windows.Forms.Label();
-            this.dataGridView5 = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GirisTarihi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CikisTarihi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.YapilanYer = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BakimTutari = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NakitOdeme = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.YapilanYer = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -81,7 +83,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -95,6 +96,34 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Bakım Geçmişi";
+            // 
+            // dataGridView5
+            // 
+            this.dataGridView5.AllowUserToAddRows = false;
+            this.dataGridView5.AllowUserToDeleteRows = false;
+            this.dataGridView5.AllowUserToResizeColumns = false;
+            this.dataGridView5.AllowUserToResizeRows = false;
+            this.dataGridView5.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView5.BackgroundColor = System.Drawing.SystemColors.InactiveCaption;
+            this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView5.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn9,
+            this.GirisTarihi,
+            this.CikisTarihi,
+            this.BakimTutari,
+            this.NakitOdeme,
+            this.YapilanYer});
+            this.dataGridView5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView5.Location = new System.Drawing.Point(3, 16);
+            this.dataGridView5.MultiSelect = false;
+            this.dataGridView5.Name = "dataGridView5";
+            this.dataGridView5.ReadOnly = true;
+            this.dataGridView5.RowHeadersVisible = false;
+            this.dataGridView5.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView5.Size = new System.Drawing.Size(766, 159);
+            this.dataGridView5.TabIndex = 6;
             // 
             // dataGridView2
             // 
@@ -500,33 +529,6 @@
             this.SBIT.Text = "SBIT";
             this.SBIT.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // dataGridView5
-            // 
-            this.dataGridView5.AllowUserToAddRows = false;
-            this.dataGridView5.AllowUserToDeleteRows = false;
-            this.dataGridView5.AllowUserToResizeColumns = false;
-            this.dataGridView5.AllowUserToResizeRows = false;
-            this.dataGridView5.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView5.BackgroundColor = System.Drawing.SystemColors.InactiveCaption;
-            this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView5.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn9,
-            this.GirisTarihi,
-            this.CikisTarihi,
-            this.YapilanYer,
-            this.BakimTutari});
-            this.dataGridView5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView5.Location = new System.Drawing.Point(3, 16);
-            this.dataGridView5.MultiSelect = false;
-            this.dataGridView5.Name = "dataGridView5";
-            this.dataGridView5.ReadOnly = true;
-            this.dataGridView5.RowHeadersVisible = false;
-            this.dataGridView5.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView5.Size = new System.Drawing.Size(766, 159);
-            this.dataGridView5.TabIndex = 6;
-            // 
             // dataGridViewTextBoxColumn3
             // 
             this.dataGridViewTextBoxColumn3.DataPropertyName = "Id";
@@ -565,19 +567,26 @@
             this.CikisTarihi.Name = "CikisTarihi";
             this.CikisTarihi.ReadOnly = true;
             // 
-            // YapilanYer
-            // 
-            this.YapilanYer.DataPropertyName = "YapilanYer";
-            this.YapilanYer.HeaderText = "YapilanYer";
-            this.YapilanYer.Name = "YapilanYer";
-            this.YapilanYer.ReadOnly = true;
-            // 
             // BakimTutari
             // 
             this.BakimTutari.DataPropertyName = "BakimTutari";
             this.BakimTutari.HeaderText = "BakimTutari";
             this.BakimTutari.Name = "BakimTutari";
             this.BakimTutari.ReadOnly = true;
+            // 
+            // NakitOdeme
+            // 
+            this.NakitOdeme.DataPropertyName = "NakitOdeme";
+            this.NakitOdeme.HeaderText = "Nakit Odeme";
+            this.NakitOdeme.Name = "NakitOdeme";
+            this.NakitOdeme.ReadOnly = true;
+            // 
+            // YapilanYer
+            // 
+            this.YapilanYer.DataPropertyName = "YapilanYer";
+            this.YapilanYer.HeaderText = "YapilanYer";
+            this.YapilanYer.Name = "YapilanYer";
+            this.YapilanYer.ReadOnly = true;
             // 
             // BakimGecmisi
             // 
@@ -592,6 +601,7 @@
             this.Text = "BakimGecmisi";
             this.Load += new System.EventHandler(this.BakimGecmisi_Load);
             this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -600,7 +610,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -650,7 +659,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
         private System.Windows.Forms.DataGridViewTextBoxColumn GirisTarihi;
         private System.Windows.Forms.DataGridViewTextBoxColumn CikisTarihi;
-        private System.Windows.Forms.DataGridViewTextBoxColumn YapilanYer;
         private System.Windows.Forms.DataGridViewTextBoxColumn BakimTutari;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NakitOdeme;
+        private System.Windows.Forms.DataGridViewTextBoxColumn YapilanYer;
     }
 }

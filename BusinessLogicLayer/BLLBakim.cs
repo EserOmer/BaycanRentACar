@@ -30,9 +30,13 @@ namespace BusinessLogicLayer
         {
             return FacadeBakim.BakimListele();
         }
-        public static List<EntityBakim> ListeleTek(int Plaka)
+        public static List<EntityBakim> ListeleTek(int deger)
         {
-            return FacadeBakim.BakimListeleTek(Plaka);
+            return FacadeBakim.BakimListeleTek(deger);
+        }
+        public static EntityBakim BakimListeleTek2(int deger)
+        {
+            return FacadeBakim.BkmLstTk(deger);
         }
     }
 }

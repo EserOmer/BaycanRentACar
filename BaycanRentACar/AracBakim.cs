@@ -15,6 +15,7 @@ namespace BaycanRentACar
 {
     public partial class AracBakim : Form
     {
+        
         public AracBakim()
         {
             InitializeComponent();
@@ -36,7 +37,6 @@ namespace BaycanRentACar
             AracListesi();
             TxtNakitO.Text = "0";
             TxtBTutari.Text = "0";
-            TxtVTutari.Enabled = false;
             BakimListesi();
         }
 
@@ -75,6 +75,16 @@ namespace BaycanRentACar
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+        public static int aracId;
+        public static int bakimId;
+        private void dataGridView5_DoubleClick(object sender, EventArgs e)
+        {
+            int secilen = dataGridView5.SelectedCells[0].RowIndex;
+            aracId= Convert.ToInt32(dataGridView5.Rows[secilen].Cells[1].Value);
+            bakimId = Convert.ToInt32(dataGridView5.Rows[secilen].Cells[0].Value);
+            BakimGuncelle form = new BakimGuncelle();
+            form.Show();
         }
     }
 }

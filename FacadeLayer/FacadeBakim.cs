@@ -38,7 +38,8 @@ namespace FacadeLayer
             {
                 komut.Connection.Open();
             }
-            komut.Parameters.AddWithValue("AracId", deger.AracId);
+            komut.Parameters.AddWithValue("Id", deger.Id);
+            //komut.Parameters.AddWithValue("AracId", deger.AracId);
             komut.Parameters.AddWithValue("GirisTarihi", deger.GirisTarihi);
             komut.Parameters.AddWithValue("CikisTarihi", deger.CikisTarihi);
             komut.Parameters.AddWithValue("YapilanYer", deger.YapilanYer);
@@ -75,7 +76,7 @@ namespace FacadeLayer
             dr.Close();
             return degerler;
         }
-        public static List<EntityBakim> BakimListeleTek(int Plaka)
+        public static List<EntityBakim> BakimListeleTek(int deger)
         {
             List<EntityBakim> degerler = new List<EntityBakim>();
             SqlCommand komut = new SqlCommand("BakimListesiTek", SqlBaglantisi.Baglanti);
@@ -84,7 +85,7 @@ namespace FacadeLayer
             {
                 komut.Connection.Open();
             }
-            komut.Parameters.AddWithValue("AracId", Plaka);
+            komut.Parameters.AddWithValue("AracId", deger);
             SqlDataReader dr = komut.ExecuteReader();
             
             while (dr.Read())
@@ -97,11 +98,39 @@ namespace FacadeLayer
                 ent.BakimTutari = Convert.ToDecimal(dr["BakimTutari"]);
                 ent.Aciklama = dr["Aciklama"].ToString();
                 ent.AracId = Convert.ToInt32(dr["AracId"]);
+                ent.NakitOdeme = Convert.ToDecimal(dr["NakitOdeme"]);
                 degerler.Add(ent);
             }
             dr.Close();
 
             return degerler;
+        }
+        public static EntityBakim BkmLstTk(int deger)
+        {
+            SqlCommand komut = new SqlCommand("BakimListesiTek2", SqlBaglantisi.Baglanti);
+            komut.CommandType = CommandType.StoredProcedure;
+            if (komut.Connection.State != ConnectionState.Open)
+            {
+                komut.Connection.Open();
+            }
+            komut.Parameters.AddWithValue("BakimId", deger);
+            SqlDataReader dr = komut.ExecuteReader();
+            EntityBakim ent = new EntityBakim();
+            while (dr.Read())
+            {
+
+                ent.Id = Convert.ToInt32(dr["id"]);
+                ent.GirisTarihi = Convert.ToDateTime(dr["GirisTarihi"]);
+                ent.CikisTarihi = Convert.ToDateTime(dr["CikisTarihi"]);
+                ent.YapilanYer = dr["YapilanYer"].ToString();
+                ent.BakimTutari = Convert.ToDecimal(dr["BakimTutari"]);
+                ent.Aciklama = dr["Aciklama"].ToString();
+                ent.AracId = Convert.ToInt32(dr["AracId"]);
+                ent.NakitOdeme = Convert.ToDecimal(dr["NakitOdeme"]);
+            }
+            dr.Close();
+
+            return ent;
         }
     }
 }
