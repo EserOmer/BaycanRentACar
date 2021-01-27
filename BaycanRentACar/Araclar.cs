@@ -176,5 +176,11 @@ namespace BaycanRentACar
             Ceza goster = new Ceza();
             goster.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Veresiyeler veresiyeler = new Veresiyeler();
+            veresiyeler.Show();
+        }
     }
 }

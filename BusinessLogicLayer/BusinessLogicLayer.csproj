@@ -47,6 +47,7 @@
     <Compile Include="BLLKasko.cs" />
     <Compile Include="BLLSigorta.cs" />
     <Compile Include="BLLVeresiye.cs" />
+    <Compile Include="BLLVeresiyeOdeme.cs" />
     <Compile Include="BLLVize.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

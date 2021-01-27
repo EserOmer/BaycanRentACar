@@ -46,6 +46,7 @@
     <Compile Include="FacadeKasko.cs" />
     <Compile Include="FacadeSigorta.cs" />
     <Compile Include="FacadeVeresiye.cs" />
+    <Compile Include="FacadeVeresiyeOdeme.cs" />
     <Compile Include="FacadeVize.cs" />
     <Compile Include="SqlBaglantisi.cs" />
     <Compile Include="FacadeAraclar.cs" />

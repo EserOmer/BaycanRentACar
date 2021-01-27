@@ -108,6 +108,18 @@
     <Compile Include="Sigorta.Designer.cs">
       <DependentUpon>Sigorta.cs</DependentUpon>
     </Compile>
+    <Compile Include="Veresiyeler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Veresiyeler.Designer.cs">
+      <DependentUpon>Veresiyeler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VeresiyeOdeme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VeresiyeOdeme.Designer.cs">
+      <DependentUpon>VeresiyeOdeme.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vize.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -159,6 +171,12 @@
     </Compile>
     <EmbeddedResource Include="Sigorta.resx">
       <DependentUpon>Sigorta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Veresiyeler.resx">
+      <DependentUpon>Veresiyeler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VeresiyeOdeme.resx">
+      <DependentUpon>VeresiyeOdeme.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vize.resx">
       <DependentUpon>Vize.cs</DependentUpon>

@@ -10,25 +10,13 @@ namespace BusinessLogicLayer
 {
     public class BLLVeresiye
     {
-        public static int Ekle(EntityVeresiye deger)
-        {
-            if (deger.BakimId != null)
-            {
-                return FacadeVeresiye.Ekle(deger);
-            }
-            return -1;
-        }
-        public static bool Guncelle(EntityVeresiye deger)
-        {
-            if (deger.BakimId != null)
-            {
-                return FacadeVeresiye.Guncelle(deger);
-            }
-            return false;
-        }
         public static List<EntityVeresiye> Listele()
         {
             return FacadeVeresiye.VeresiyeListele();
+        }
+        public static List<EntityVeresiye> ListeleTek(int deger)
+        {
+            return FacadeVeresiye.VeresiyeListeleTek(deger);
         }
     }
 }

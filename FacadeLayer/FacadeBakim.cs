@@ -39,7 +39,6 @@ namespace FacadeLayer
                 komut.Connection.Open();
             }
             komut.Parameters.AddWithValue("Id", deger.Id);
-            //komut.Parameters.AddWithValue("AracId", deger.AracId);
             komut.Parameters.AddWithValue("GirisTarihi", deger.GirisTarihi);
             komut.Parameters.AddWithValue("CikisTarihi", deger.CikisTarihi);
             komut.Parameters.AddWithValue("YapilanYer", deger.YapilanYer);

@@ -36,33 +36,19 @@
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.panelDropDown2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.BtnCeza = new System.Windows.Forms.Button();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.BtnGecmisDetaylar = new System.Windows.Forms.Button();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.button4 = new System.Windows.Forms.Button();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.button5 = new System.Windows.Forms.Button();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.BtnVize = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.BtnDetaylar = new System.Windows.Forms.Button();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.panelDropDown = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.BtnYeniAracEkle = new System.Windows.Forms.Button();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.BtnAracGuncelle = new System.Windows.Forms.Button();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.BtnArcIslemler = new System.Windows.Forms.Button();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.BtnBkmKyd = new System.Windows.Forms.Button();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.BtnArcKrl = new System.Windows.Forms.Button();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.BtnExit = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -72,26 +58,43 @@
             this.Km = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Renk = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Vites = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button1 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.BtnDetaylar = new System.Windows.Forms.Button();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.BtnArcIslemler = new System.Windows.Forms.Button();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanel2.SuspendLayout();
             this.panelDropDown2.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.panelDropDown.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
-            this.panelDropDown.SuspendLayout();
-            this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // timer1
@@ -121,6 +124,8 @@
             this.flowLayoutPanel2.Controls.Add(this.panelDropDown);
             this.flowLayoutPanel2.Controls.Add(this.pictureBox2);
             this.flowLayoutPanel2.Controls.Add(this.BtnBkmKyd);
+            this.flowLayoutPanel2.Controls.Add(this.pictureBox13);
+            this.flowLayoutPanel2.Controls.Add(this.button1);
             this.flowLayoutPanel2.Controls.Add(this.pictureBox4);
             this.flowLayoutPanel2.Controls.Add(this.BtnArcKrl);
             this.flowLayoutPanel2.Controls.Add(this.pictureBox7);
@@ -128,7 +133,7 @@
             this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.flowLayoutPanel2.Location = new System.Drawing.Point(0, 30);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(204, 348);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(211, 348);
             this.flowLayoutPanel2.TabIndex = 8;
             this.flowLayoutPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel2_Paint);
             // 
@@ -163,16 +168,6 @@
             this.panel3.Size = new System.Drawing.Size(184, 0);
             this.panel3.TabIndex = 4;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(38, 93);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(22, 24);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 45;
-            this.pictureBox1.TabStop = false;
-            // 
             // BtnCeza
             // 
             this.BtnCeza.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -186,16 +181,6 @@
             this.BtnCeza.UseVisualStyleBackColor = true;
             this.BtnCeza.Click += new System.EventHandler(this.BtnCeza_Click);
             // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(38, 123);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(22, 24);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 43;
-            this.pictureBox5.TabStop = false;
-            // 
             // BtnGecmisDetaylar
             // 
             this.BtnGecmisDetaylar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -207,16 +192,6 @@
             this.BtnGecmisDetaylar.Text = "Geçmiş İşlemler";
             this.BtnGecmisDetaylar.UseVisualStyleBackColor = true;
             this.BtnGecmisDetaylar.Click += new System.EventHandler(this.BtnGecmisDetaylar_Click);
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(38, 63);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(22, 24);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 41;
-            this.pictureBox6.TabStop = false;
             // 
             // button4
             // 
@@ -231,16 +206,6 @@
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(38, 33);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(22, 24);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 39;
-            this.pictureBox8.TabStop = false;
-            // 
             // button5
             // 
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -252,16 +217,6 @@
             this.button5.Text = "Sigorta";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // pictureBox11
-            // 
-            this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
-            this.pictureBox11.Location = new System.Drawing.Point(38, 3);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(22, 24);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox11.TabIndex = 37;
-            this.pictureBox11.TabStop = false;
             // 
             // BtnVize
             // 
@@ -284,34 +239,6 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(184, 30);
             this.panel4.TabIndex = 5;
-            // 
-            // BtnDetaylar
-            // 
-            this.BtnDetaylar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(54)))), ((int)(((byte)(80)))));
-            this.BtnDetaylar.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BtnDetaylar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnDetaylar.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.BtnDetaylar.Image = global::BaycanRentACar.Properties.Resources.Expand_Arrow_20px;
-            this.BtnDetaylar.Location = new System.Drawing.Point(42, 0);
-            this.BtnDetaylar.Name = "BtnDetaylar";
-            this.BtnDetaylar.Size = new System.Drawing.Size(142, 30);
-            this.BtnDetaylar.TabIndex = 36;
-            this.BtnDetaylar.Text = "Detaylar";
-            this.BtnDetaylar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnDetaylar.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.BtnDetaylar.UseVisualStyleBackColor = false;
-            this.BtnDetaylar.Click += new System.EventHandler(this.BtnDetaylar_Click_1);
-            // 
-            // pictureBox12
-            // 
-            this.pictureBox12.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox12.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox12.Image")));
-            this.pictureBox12.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(42, 30);
-            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox12.TabIndex = 35;
-            this.pictureBox12.TabStop = false;
             // 
             // panelDropDown
             // 
@@ -351,16 +278,6 @@
             this.BtnYeniAracEkle.UseVisualStyleBackColor = true;
             this.BtnYeniAracEkle.Click += new System.EventHandler(this.BtnYeniAracEkle_Click);
             // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(38, 33);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(22, 24);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox9.TabIndex = 36;
-            this.pictureBox9.TabStop = false;
-            // 
             // BtnAracGuncelle
             // 
             this.BtnAracGuncelle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -374,16 +291,6 @@
             this.BtnAracGuncelle.UseVisualStyleBackColor = true;
             this.BtnAracGuncelle.Click += new System.EventHandler(this.BtnAracGuncelle_Click);
             // 
-            // pictureBox10
-            // 
-            this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
-            this.pictureBox10.Location = new System.Drawing.Point(38, 3);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(22, 24);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox10.TabIndex = 35;
-            this.pictureBox10.TabStop = false;
-            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.BtnArcIslemler);
@@ -393,46 +300,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(184, 30);
             this.panel2.TabIndex = 29;
-            // 
-            // BtnArcIslemler
-            // 
-            this.BtnArcIslemler.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(54)))), ((int)(((byte)(80)))));
-            this.BtnArcIslemler.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BtnArcIslemler.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnArcIslemler.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.BtnArcIslemler.Image = global::BaycanRentACar.Properties.Resources.Expand_Arrow_20px;
-            this.BtnArcIslemler.Location = new System.Drawing.Point(42, 0);
-            this.BtnArcIslemler.Name = "BtnArcIslemler";
-            this.BtnArcIslemler.Size = new System.Drawing.Size(142, 30);
-            this.BtnArcIslemler.TabIndex = 34;
-            this.BtnArcIslemler.Text = "Araç İşlemleri";
-            this.BtnArcIslemler.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnArcIslemler.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.BtnArcIslemler.UseVisualStyleBackColor = false;
-            this.BtnArcIslemler.Click += new System.EventHandler(this.BtnArcIslemler_Click_1);
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(54)))), ((int)(((byte)(80)))));
-            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(42, 30);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 34;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(3, 75);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 3, 0, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(42, 30);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 36;
-            this.pictureBox2.TabStop = false;
             // 
             // BtnBkmKyd
             // 
@@ -447,22 +314,11 @@
             this.BtnBkmKyd.UseVisualStyleBackColor = true;
             this.BtnBkmKyd.Click += new System.EventHandler(this.BtnBkmKyd_Click);
             // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(3, 111);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 3, 0, 3);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(42, 30);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 32;
-            this.pictureBox4.TabStop = false;
-            // 
             // BtnArcKrl
             // 
             this.BtnArcKrl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnArcKrl.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.BtnArcKrl.Location = new System.Drawing.Point(45, 111);
+            this.BtnArcKrl.Location = new System.Drawing.Point(45, 147);
             this.BtnArcKrl.Margin = new System.Windows.Forms.Padding(0, 3, 3, 3);
             this.BtnArcKrl.Name = "BtnArcKrl";
             this.BtnArcKrl.Size = new System.Drawing.Size(142, 30);
@@ -471,22 +327,11 @@
             this.BtnArcKrl.UseVisualStyleBackColor = true;
             this.BtnArcKrl.Click += new System.EventHandler(this.BtnArcKrl_Click);
             // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(3, 147);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(3, 3, 0, 3);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(42, 30);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7.TabIndex = 42;
-            this.pictureBox7.TabStop = false;
-            // 
             // BtnExit
             // 
             this.BtnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnExit.ForeColor = System.Drawing.Color.Red;
-            this.BtnExit.Location = new System.Drawing.Point(45, 147);
+            this.BtnExit.Location = new System.Drawing.Point(45, 183);
             this.BtnExit.Margin = new System.Windows.Forms.Padding(0, 3, 3, 3);
             this.BtnExit.Name = "BtnExit";
             this.BtnExit.Size = new System.Drawing.Size(142, 30);
@@ -513,13 +358,13 @@
             this.Renk,
             this.Vites});
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(204, 30);
+            this.dataGridView1.Location = new System.Drawing.Point(211, 30);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(651, 348);
+            this.dataGridView1.Size = new System.Drawing.Size(644, 348);
             this.dataGridView1.TabIndex = 9;
             // 
             // Id
@@ -572,6 +417,190 @@
             this.Vites.Name = "Vites";
             this.Vites.ReadOnly = true;
             // 
+            // button1
+            // 
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button1.Location = new System.Drawing.Point(45, 111);
+            this.button1.Margin = new System.Windows.Forms.Padding(0, 3, 3, 3);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(142, 30);
+            this.button1.TabIndex = 43;
+            this.button1.Text = "Veresiyeler";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(38, 93);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(22, 24);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 45;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(38, 123);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(22, 24);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 43;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(38, 63);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(22, 24);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 41;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
+            this.pictureBox8.Location = new System.Drawing.Point(38, 33);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(22, 24);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox8.TabIndex = 39;
+            this.pictureBox8.TabStop = false;
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
+            this.pictureBox11.Location = new System.Drawing.Point(38, 3);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(22, 24);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox11.TabIndex = 37;
+            this.pictureBox11.TabStop = false;
+            // 
+            // BtnDetaylar
+            // 
+            this.BtnDetaylar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(54)))), ((int)(((byte)(80)))));
+            this.BtnDetaylar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BtnDetaylar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnDetaylar.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.BtnDetaylar.Image = global::BaycanRentACar.Properties.Resources.Expand_Arrow_20px;
+            this.BtnDetaylar.Location = new System.Drawing.Point(42, 0);
+            this.BtnDetaylar.Name = "BtnDetaylar";
+            this.BtnDetaylar.Size = new System.Drawing.Size(142, 30);
+            this.BtnDetaylar.TabIndex = 36;
+            this.BtnDetaylar.Text = "Detaylar";
+            this.BtnDetaylar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnDetaylar.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.BtnDetaylar.UseVisualStyleBackColor = false;
+            this.BtnDetaylar.Click += new System.EventHandler(this.BtnDetaylar_Click_1);
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox12.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox12.Image")));
+            this.pictureBox12.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(42, 30);
+            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox12.TabIndex = 35;
+            this.pictureBox12.TabStop = false;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
+            this.pictureBox9.Location = new System.Drawing.Point(38, 33);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(22, 24);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox9.TabIndex = 36;
+            this.pictureBox9.TabStop = false;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
+            this.pictureBox10.Location = new System.Drawing.Point(38, 3);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(22, 24);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox10.TabIndex = 35;
+            this.pictureBox10.TabStop = false;
+            // 
+            // BtnArcIslemler
+            // 
+            this.BtnArcIslemler.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(54)))), ((int)(((byte)(80)))));
+            this.BtnArcIslemler.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BtnArcIslemler.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnArcIslemler.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.BtnArcIslemler.Image = global::BaycanRentACar.Properties.Resources.Expand_Arrow_20px;
+            this.BtnArcIslemler.Location = new System.Drawing.Point(42, 0);
+            this.BtnArcIslemler.Name = "BtnArcIslemler";
+            this.BtnArcIslemler.Size = new System.Drawing.Size(142, 30);
+            this.BtnArcIslemler.TabIndex = 34;
+            this.BtnArcIslemler.Text = "Araç İşlemleri";
+            this.BtnArcIslemler.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnArcIslemler.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.BtnArcIslemler.UseVisualStyleBackColor = false;
+            this.BtnArcIslemler.Click += new System.EventHandler(this.BtnArcIslemler_Click_1);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(54)))), ((int)(((byte)(80)))));
+            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(42, 30);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 34;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(3, 75);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 3, 0, 3);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(42, 30);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 36;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox13
+            // 
+            this.pictureBox13.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox13.Image")));
+            this.pictureBox13.Location = new System.Drawing.Point(3, 111);
+            this.pictureBox13.Margin = new System.Windows.Forms.Padding(3, 3, 0, 3);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(42, 30);
+            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox13.TabIndex = 44;
+            this.pictureBox13.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(3, 147);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 3, 0, 3);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(42, 30);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 32;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
+            this.pictureBox7.Location = new System.Drawing.Point(3, 183);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(3, 3, 0, 3);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(42, 30);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7.TabIndex = 42;
+            this.pictureBox7.TabStop = false;
+            // 
             // Araclar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -588,23 +617,24 @@
             this.flowLayoutPanel2.ResumeLayout(false);
             this.panelDropDown2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.panelDropDown.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
-            this.panelDropDown.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -652,5 +682,7 @@
         private System.Windows.Forms.Button BtnExit;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button BtnCeza;
+        private System.Windows.Forms.PictureBox pictureBox13;
+        private System.Windows.Forms.Button button1;
     }
 }
